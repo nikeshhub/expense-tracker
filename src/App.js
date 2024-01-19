@@ -79,7 +79,6 @@ function App() {
               style={{
                 fontWeight: "bold",
                 fontSize: "19px",
-                // marginBottom: "18px",
               }}
             >
               Weekly Income:
