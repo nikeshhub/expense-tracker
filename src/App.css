@@ -1,0 +1,104 @@
+.App {
+  font-family: Arial, sans-serif;
+  /* max-width: 600px; */
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.input {
+  width: 45%; /* Adjust the width as needed */
+}
+
+.summary {
+  width: 45%; /* Adjust the width as needed */
+}
+
+h1 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input {
+  width: 90%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  padding: 16px;
+}
+
+.expenses,
+.savings {
+  font-weight: bold;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .App {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    align-items: center;
+  }
+
+  .input,
+  .summary {
+    width: 100%; /* Make the width 100% on smaller screens */
+  }
+
+  .table {
+    width: 100%; /* Make the table full width on smaller screens */
+  }
+
+  .cards {
+    gap: 16px;
+  }
+}
