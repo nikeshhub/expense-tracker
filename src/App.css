@@ -68,7 +68,7 @@ p {
 .cards {
   display: flex;
   align-items: center;
-  gap: 4rem;
+  gap: 2rem;
   padding: 16px;
 }
 
@@ -85,7 +85,7 @@ p {
   width: 8rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .App {
     flex-direction: column;
     align-items: center;
@@ -101,6 +101,20 @@ p {
   }
 
   .cards {
-    gap: 16px;
+    padding: 0;
+    gap: 8px;
+  }
+  
+}
+
+@media (max-width: 425px) {
+  .cards {
+    flex-direction: column;
+    align-items: start;
+  }
+  .expenses,
+  .savings,
+  .status {
+    width: 12rem;
   }
 }
