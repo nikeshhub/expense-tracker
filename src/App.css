@@ -73,7 +73,8 @@ p {
 }
 
 .expenses,
-.savings {
+.savings,
+.status {
   font-weight: bold;
   background-color: #fff;
   border-radius: 8px;
@@ -81,6 +82,7 @@ p {
   padding: 16px;
   margin-bottom: 16px;
   display: inline-block;
+  width: 8rem;
 }
 
 @media (max-width: 768px) {

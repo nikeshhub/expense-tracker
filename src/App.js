@@ -19,6 +19,8 @@ function App() {
     wednesday: "",
     thursday: "",
     friday: "",
+    saturday: "",
+    sunday: "",
   });
   const [totalExpenses, setTotalExpenses] = useState(0);
   const [savings, setSavings] = useState(0);
@@ -43,7 +45,15 @@ function App() {
   };
 
   const chartData = {
-    labels: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    labels: [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday",
+    ],
     datasets: [
       {
         label: "Expenses",
@@ -133,7 +143,19 @@ function App() {
             <div className="savings">
               <p>
                 Savings: <br />
-                <br /> Rs.{savings.toFixed(2)}
+                <br /> Rs.{savings.toFixed(2)} <br />
+              </p>
+            </div>
+            <div className="status">
+              <p>
+                Status: <br /> <br />
+                {savings > 0 ? (
+                  <span>Profit</span>
+                ) : savings === 0 ? (
+                  <span>Neutral</span>
+                ) : (
+                  <span>Loss</span>
+                )}
               </p>
             </div>
           </div>
